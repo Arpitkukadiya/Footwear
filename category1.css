@@ -1,0 +1,165 @@
+/* Container for product cards */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Product Card Styling */
+.product {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px; /* Leaner width */
+    box-sizing: border-box;
+    transition: height 0.3s ease; /* Smooth expansion */
+    overflow: hidden;
+}
+
+/* Product Image Styling */
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Product Details Styling */
+.product-details {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Product Name and Price Styling */
+.product-details p {
+    margin: 5px 0;
+}
+
+/* Size Options Container */
+.size-options {
+    display: none; /* Initially hidden */
+    margin-top: 10px;
+    overflow: hidden; /* Ensure size options don't affect layout */
+    transition: max-height 0.3s ease; /* Smooth expansion */
+    max-height: 0; /* Default height when hidden */
+    width: 100%;
+}
+
+/* Size Options Form Styling */
+.size-options form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Size Label and Select Styling */
+.size-label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Show Size Button Styling */
+.show-size-button {
+    background-color: #4b2315;
+    border: 1px solid #4b2315;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    width: 100%;
+    max-width: 200px; /* Consistent width */
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.show-size-button:hover {
+    background-color: #4b2315; 
+    border-color: #4b2315; 
+}
+
+/* Add to Cart Button Styling */
+.add-to-cart {
+    background-color: #4b2315;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 200px; /* Consistent width */
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.add-to-cart:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.add-to-cart:hover:not(:disabled) {
+    background-color: #4b2315; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product {
+        width: 100%;
+    }
+}
+
+/* Container for select element */
+.select-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 200px;
+}
+
+/* Style for select element */
+select[name="size"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #4b2315; /* Dark brown text */
+    appearance: none; /* Removes default dropdown arrow */
+    -webkit-appearance: none; /* Removes default dropdown arrow in WebKit browsers */
+    -moz-appearance: none; /* Removes default dropdown arrow in Firefox */
+}
+
+/* Style for dropdown arrow */
+select[name="size"]::after {
+    content: '▼';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #4b2315; /* Dark brown arrow */
+}
+
+/* Hover effect for dropdown element */
+select[name="size"]:hover {
+    border-color: #4b2315; /* Dark brown border on hover */
+}
+
+/* Optional: Style the placeholder option */
+select[name="size"] option:first-child {
+    color: #4b2315; /* Dark brown placeholder text */
+}

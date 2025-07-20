@@ -1,0 +1,148 @@
+/* General Body Styling */
+body {
+    background-image: url('suhani1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover; /* Changed to 'cover' for better scaling */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff; /* Semi-transparent background */
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #4b2315;
+    text-shadow: #e6dccb;
+}
+
+/* Category Menu Styling */
+.categories {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.category-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.category-menu li {
+    margin: 10px 15px;
+}
+
+.category-menu a {
+    color: #4b2315;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 35px;
+    background-color: #fff; /* Slightly transparent background */
+    transition: background-color 0.3s ease;
+}
+
+.category-menu a:hover {
+    background-color: #d9d3d3; /* Lighter background on hover */
+}
+
+/* User Info and Logout Styling */
+.category-menu li:last-child {
+    margin-left: 20px;
+}
+
+.category-menu li {
+    font-size: 15px;
+    color: #4b2315;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .category-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-menu li {
+        margin: 5px 0;
+    }
+}
+
+
+
+
+/* General Body Styling */
+
+
+/* Centered Container for Login Form */
+.container {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for form container */
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Title Styling */
+h2 {
+    margin: 0 0 20px;
+    font-size: 28px;
+    text-align: center;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #2575fc;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #1c62d8; /* Darker shade on hover */
+}
+
+/* Error Message Styling */
+p {
+    text-align: center;
+    margin-top: 10px;
+    color: red;
+    font-size: 14px;
+}

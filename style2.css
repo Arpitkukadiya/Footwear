@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+img {
+    max-width: 100px;
+    height: auto;
+}
+
+.remove-btn {
+    background-color: #4b2315;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.remove-btn:hover {
+    background-color: #c0392b;
+}
+
+.message {
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+/*cart.php*/
+
+
+/* cart.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Table Styles */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+td img {
+    max-width: 100px;
+    height: auto;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Total Price */
+p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Form Styles */
+form {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+input[type="submit"] {
+    background-color: #4b2315;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+input[type="submit"]:hover {
+    background-color: #4b2315;
+}
+
+/* Error Messages */
+span {
+    display: block;
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+
+

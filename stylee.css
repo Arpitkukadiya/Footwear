@@ -1,0 +1,241 @@
+/* style1.css */
+.madimi-one-regular {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+body {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(0, 153, 255);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+/* home page */
+
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333; /* Background color of the navbar */
+    padding: 10px 0; /* Padding for top and bottom */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff; /* Text color of the links */
+}
+
+.navbar a:hover {
+    color: #00f; /* Text color of links on hover */
+}
+
+.navbar h1 {
+    text-align: center;
+    color: #fff; /* Text color of the heading */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.category-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.category-menu li {
+    margin: 0 10px;
+}
+
+.category-menu a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.category-menu a:hover, .category-menu a.active {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the product cards horizontally */
+}
+
+.product {
+    width: calc(30% - 35px); /* Adjust the width of each product card */
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden; /* Hide overflowing content */
+    height: 450px; /* Fixed height for each product card */
+}
+
+.product img {
+    width: 100%; /* Make the image fill the entire width of the product card */
+    height: 60%; /* Set the height of the image */
+    /*border-top-left-radius: 8px;*/
+   /* border-top-right-radius: 8px;*/
+    object-fit: cover; /* Cover the entire area of the image */
+}
+
+.product-details {
+    padding: 20px;
+}
+
+.name {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.price {
+    color: #007bff; /* Change the color of the price */
+}
+
+.size-options {
+    display: none;
+}
+
+.show-size {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/*navbar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    width: 200px;
+    background-color: #313131;
+    height: 100%; /* Full height */
+  position: fixed; /* Make it stick, even on scroll */
+  overflow: auto; 
+  }
+  
+  li a {
+    display: block;
+    color: #f4f1f1;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color on hover */
+  li a:hover {
+    background-color: #555;
+    color: white;
+  }
